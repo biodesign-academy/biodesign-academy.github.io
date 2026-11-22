@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://biodesign-academy.github.io/sitemap.xml
+Sitemap: https://biodesign-academy.github.io/protein-backstory/sitemap.xml

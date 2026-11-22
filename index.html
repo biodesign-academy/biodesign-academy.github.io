@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biodesign Academy · Tools and papers</title>
+<meta name="description" content="Free tools and open papers from Biodesign Academy, for designers working with proteins and living matter. Start with Protein Backstory: where your protein came from, and who it's owed to.">
+<link rel="canonical" href="https://biodesign-academy.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Biodesign Academy">
+<meta property="og:title" content="Biodesign Academy · Tools and papers">
+<meta property="og:description" content="Free tools and open papers for designers working with proteins and living matter.">
+<meta property="og:url" content="https://biodesign-academy.github.io/">
+<meta property="og:image" content="https://biodesign-academy.github.io/protein-backstory/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Biodesign Academy","url":"https://www.biodesign.academy","logo":"https://biodesign-academy.github.io/logo.png","description":"Insights and tools for learning and practising AI-driven biodesign.","founder":{"@type":"Person","name":"Raphael Kim","identifier":"https://orcid.org/0000-0002-0777-0134"},"sameAs":["https://github.com/biodesign-academy","https://biodesign-academy.github.io/"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;600&family=Inter:wght@400;500&family=Fraunces:ital,opsz,wght@1,9..144,400&display=swap" rel="stylesheet">
+<style>
+  /* Biodesign Academy Brand v3.0, restrained tier */
+  :root{--stock:#F6F1E8;--stock2:#EFE9DC;--ink:#211D17;--slate:#6B6358;--salmon-deep:#C9543E;--lime-deep:#5C7A18;--hair:rgba(33,29,23,.18);
+    --mono:'Roboto Mono',ui-monospace,Menlo,Consolas,monospace;--sans:'Inter',Arial,Helvetica,sans-serif;--serif:'Fraunces',Georgia,serif}
+  *{box-sizing:border-box}
+  html{background:var(--stock)}
+  body{margin:0;color:var(--ink);font:16px/1.65 var(--sans);background:var(--stock);
+    background-image:radial-gradient(rgba(33,29,23,.03) 1px,transparent 1px),linear-gradient(to right,rgba(33,29,23,.045) 1px,transparent 1px);background-size:4px 4px,25% 100%}
+  .wrap{max-width:820px;margin:auto;padding:0 24px}
+  .spec{display:flex;justify-content:space-between;align-items:center;padding-top:14px;font:500 11px/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--slate)}
+  .seed{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--lime-deep);margin-right:8px;vertical-align:1px}
+  header{padding:56px 0 28px;display:flex;gap:22px;align-items:center}
+  header img{width:72px;height:72px;border:1px solid var(--ink)}
+  h1{font:600 38px/1.1 var(--mono);letter-spacing:-.03em;margin:0}
+  .sub{font:400 18px/1.5 var(--sans);color:var(--slate);margin:6px 0 0}
+  h2{font:500 12px/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--slate);margin:40px 0 12px;padding-bottom:10px;border-bottom:1px solid var(--ink)}
+  a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3px}
+  a:hover{color:var(--salmon-deep)}
+  a:focus-visible{outline:2px solid var(--salmon-deep);outline-offset:2px}
+  .tool{display:grid;grid-template-columns:300px 1fr;gap:24px;border:1px solid var(--ink);padding:20px;background:var(--stock)}
+  .tool img{width:100%;height:auto;display:block;border:1px solid var(--hair)}
+  .tool h3{font:600 22px/1.2 var(--mono);letter-spacing:-.02em;margin:0 0 4px}
+  .tool h3 em{font:italic 400 24px/1 var(--serif);letter-spacing:0}
+  .tool .tag{font:400 15px/1.5 var(--sans);color:var(--slate);margin:0 0 10px}
+  .tool p{margin:0 0 12px}
+  .links{display:flex;flex-wrap:wrap;gap:6px 18px;font:500 14px/1.6 var(--sans)}
+  .btn{display:inline-block;background:var(--ink);color:var(--stock);text-decoration:none;padding:9px 16px;border-radius:4px;font:500 15px/1.2 var(--sans)}
+  .btn:hover{background:var(--salmon-deep);color:var(--stock)}
+  ul.list{list-style:none;margin:0;padding:0}
+  ul.list li{padding:12px 0;border-bottom:1px solid var(--hair)}
+  ul.list .doi{font:400 13px var(--mono);color:var(--slate);white-space:nowrap}
+  footer{margin:48px 0 0;padding:14px 0 40px;border-top:1px solid var(--ink);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font:500 11px/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--slate)}
+  footer a{color:var(--slate)}
+  @media (max-width:640px){header{padding-top:36px}h1{font-size:30px}.tool{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="spec"><span>Biodesign Academy</span><span><span class="seed" aria-hidden="true"></span>Tools and papers</span></div>
+
+  <header>
+    <img src="logo.png" alt="Biodesign Academy logo, the letters B and A">
+    <div>
+      <h1>Biodesign Academy</h1>
+      <p class="sub">Insights and tools for learning and practising AI-driven biodesign.</p>
+    </div>
+  </header>
+
+  <p>Free tools and open papers for designers, students and educators working with proteins and living matter. Each tool runs in your browser and cites the paper that explains its method. The courses and weekly Readings live at <a href="https://www.biodesign.academy">biodesign.academy</a>.</p>
+
+  <h2>Tools</h2>
+  <article class="tool">
+    <a href="protein-backstory/" aria-hidden="true" tabindex="-1"><img src="protein-backstory/og.png" alt="" loading="lazy"></a>
+    <div>
+      <h3>Protein <em>Backstory</em></h3>
+      <p class="tag">Where your protein came from, and who it's owed to.</p>
+      <p>Paste a UniProt protein ID and draft a provenance note: the organism, where and when it was collected, who recorded it, what is missing, and who it may be owed to. Nothing is sent to us.</p>
+      <div class="links"><a class="btn" href="protein-backstory/">Open the tool</a><a href="https://github.com/biodesign-academy/protein-backstory">Code</a><a href="https://doi.org/10.5281/zenodo.24441516">Paper</a></div>
+    </div>
+  </article>
+
+  <h2>Papers and data</h2>
+  <ul class="list">
+    <li>Kim, R. (2026). <a href="https://doi.org/10.5281/zenodo.24441516"><em>Protein Backstory: Provenance Notes for Biodesigners</em></a> (v1.0). Zenodo. <span class="doi">doi:10.5281/zenodo.24441516</span></li>
+    <li>Kim, R. (2026). <a href="https://doi.org/10.5281/zenodo.24432444"><em>Unresolved Companions, Snapshot 0</em></a>: organisms used in biodesign whose protein shapes are not yet worked out. Zenodo. <span class="doi">doi:10.5281/zenodo.24432444</span></li>
+  </ul>
+
+  <h2>Learn with us</h2>
+  <ul class="list">
+    <li><strong>AI-Native Biodesign: With Proteins</strong>, a six-week online course. <a href="https://www.biodesign.academy">biodesign.academy</a></li>
+    <li><strong>From the Molecule Up</strong>, weekly Readings on proteins, AI and design. <a href="https://www.biodesign.academy">biodesign.academy</a></li>
+  </ul>
+
+  <footer><span>Biodesign Academy · Stockholm and London</span><span><a href="https://github.com/biodesign-academy">GitHub</a> · <a href="https://www.biodesign.academy">biodesign.academy</a></span></footer>
+</div>
+</body>
+</html>
