@@ -80,8 +80,9 @@
   .paper{position:relative;display:flex;flex-direction:column;gap:12px;padding:28px 28px 26px;border:1px solid var(--ink);border-radius:6px 28px 28px 28px;text-decoration:none;color:inherit;background:rgba(255,253,249,.4);overflow:hidden;transition:background .2s}
   .paper:hover{background:rgba(255,253,249,.85);color:inherit}
   .paper .halo{position:absolute;right:-40px;top:-40px;width:150px;height:150px;border-radius:50%;filter:blur(20px);opacity:.42;pointer-events:none}
-  .paper:nth-child(1) .halo{background:var(--salmon)}
-  .paper:nth-child(2) .halo{background:var(--lime)}
+  .paper:nth-child(3n+1) .halo{background:var(--salmon)}
+  .paper:nth-child(3n+2) .halo{background:var(--lime)}
+  .paper:nth-child(3n) .halo{background:var(--sand);opacity:.8}
   .paper h3{font:italic 400 25px/1.25 var(--serif);margin:0;max-width:22ch;position:relative}
   .paper p{margin:0;color:var(--slate);font-size:15px;position:relative}
   .paper .doi{margin-top:auto;font:400 12.5px var(--mono);position:relative}
@@ -232,7 +233,7 @@
   <section id="papers" aria-labelledby="pa-h">
     <div class="sec-head">
       <h2 id="pa-h">Papers and data</h2>
-      <p>Open working papers on Zenodo, free to read, cite and reuse under CC BY 4.0.</p>
+      <p>Open papers, reports, data and software on Zenodo, free to read and cite. Each has its own DOI.</p>
     </div>
     <div class="papers">
       <a class="paper" href="https://doi.org/10.5281/zenodo.24441516">
@@ -248,6 +249,55 @@
         <h3>Unresolved Companions, Snapshot 0</h3>
         <p>Organisms used in biodesign whose protein shapes are not yet worked out: a dated baseline for mycelium and bacterial cellulose.</p>
         <span class="doi">doi:10.5281/zenodo.24432444</span>
+      </a>
+      <a class="paper" href="https://doi.org/10.5281/zenodo.24062013">
+        <span class="halo" aria-hidden="true"></span>
+        <span class="label">Working paper · 2026</span>
+        <h3>AI-native biodesigner: a definition and a three-question test for biodesign education</h3>
+        <p>What a good biodesigner needs when AI tools are this fast: judgement, fluency and care, with a test teachers can use as a learning outcome.</p>
+        <span class="doi">doi:10.5281/zenodo.24062013</span>
+      </a>
+      <a class="paper" href="https://doi.org/10.5281/zenodo.23642473">
+        <span class="halo" aria-hidden="true"></span>
+        <span class="label">Policy brief · 2026</span>
+        <h3>Data centres, AI, and living matter: recommendations for EU minimum performance standards</h3>
+        <p>Heat reuse for growing living matter, water stress judged by what rivers need, and letting users see the data centres behind their tools.</p>
+        <span class="doi">doi:10.5281/zenodo.23642473</span>
+      </a>
+      <a class="paper" href="https://doi.org/10.5281/zenodo.21985658">
+        <span class="halo" aria-hidden="true"></span>
+        <span class="label">Dataset · 2026</span>
+        <h3>Biodesign Protocol Provenance Dataset, Trace 01: Citrate in Bacterial Cellulose Growth Media</h3>
+        <p>How citric acid and citrate are specified in bacterial cellulose recipes across primary sources, and who cites whom.</p>
+        <span class="doi">doi:10.5281/zenodo.21985658</span>
+      </a>
+      <a class="paper" href="https://doi.org/10.5281/zenodo.20640517">
+        <span class="halo" aria-hidden="true"></span>
+        <span class="label">Technical note · 2026</span>
+        <h3>Evaluating Molecular Trust: State–Provenance Alignment in Bio-Digital Systems</h3>
+        <p>Why a molecule that still reads correctly may no longer match its claimed history, and how to reason about the gap.</p>
+        <span class="doi">doi:10.5281/zenodo.20640517</span>
+      </a>
+      <a class="paper" href="https://doi.org/10.5281/zenodo.19002474">
+        <span class="halo" aria-hidden="true"></span>
+        <span class="label">Report · 2026</span>
+        <h3>Trusted Molecular Memory: Investigating Molecular Trust in Hybrid Bio-Digital Systems</h3>
+        <p>With Thomas Heinis and Larissa Pschetz. Molecular trust as procedural and institutional, not only object-bound, with a molecular chain of custody.</p>
+        <span class="doi">doi:10.5281/zenodo.19002474</span>
+      </a>
+      <a class="paper" href="https://doi.org/10.5281/zenodo.16790912">
+        <span class="halo" aria-hidden="true"></span>
+        <span class="label">Software · 2025</span>
+        <h3>Biodesign Vocabulary Game</h3>
+        <p>A matching game of 72 term pairs that pairs biology concepts with design analogies, for learners and teachers.</p>
+        <span class="doi">doi:10.5281/zenodo.16790912</span>
+      </a>
+      <a class="paper" href="https://doi.org/10.5281/zenodo.16755847">
+        <span class="halo" aria-hidden="true"></span>
+        <span class="label">Workshop report · 2025</span>
+        <h3>AlphaFold Futures Workshop Report</h3>
+        <p>The report from our AlphaFold Futures workshop on protein structure prediction for designers.</p>
+        <span class="doi">doi:10.5281/zenodo.16755847</span>
       </a>
     </div>
   </section>
