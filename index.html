@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Biodesign Academy · Tools and papers</title>
-<meta name="description" content="Free tools and open papers from Biodesign Academy, for designers working with proteins and living matter. Start with Protein Backstory: where your protein came from, and who it's owed to.">
+<title>Open tools and papers · Biodesign Academy</title>
+<meta name="description" content="Protein Backstory, provenance notes and Unresolved Companions: free, open tools and papers for designers working with proteins and living matter. Part of Biodesign Academy.">
 <link rel="canonical" href="https://biodesign-academy.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Biodesign Academy">
-<meta property="og:title" content="Biodesign Academy · Tools and papers">
-<meta property="og:description" content="Free tools and open papers for designers working with proteins and living matter.">
+<meta property="og:title" content="Open tools and papers · Biodesign Academy">
+<meta property="og:description" content="Protein Backstory, provenance notes and Unresolved Companions: free, open tools and papers for designers working with proteins and living matter.">
 <meta property="og:url" content="https://biodesign-academy.github.io/">
 <meta property="og:image" content="https://biodesign-academy.github.io/protein-backstory/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -37,7 +37,8 @@
   .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font:600 15px/1 var(--mono);letter-spacing:-.01em}
   .brand img{width:36px;height:36px;display:block}
   nav ul{list-style:none;display:flex;gap:28px;margin:0;padding:0}
-  nav ul a{text-decoration:none;font:500 14px/1 var(--sans);color:var(--slate)}
+  nav ul a{text-decoration:none;font:500 14px/1 var(--sans);color:var(--slate);white-space:nowrap}
+  nav ul{align-items:center}
   nav ul a:hover{color:var(--ink)}
 
   .hero{position:relative;padding:72px 0 96px;min-height:560px}
@@ -48,7 +49,7 @@
   @keyframes drift{to{transform:translate(18px,-14px) scale(1.06)}}
   .hero .label{margin:0 0 26px;display:flex;align-items:center;gap:10px}
   .seed{width:8px;height:8px;border-radius:50%;background:var(--lime-deep);display:inline-block}
-  h1{font:600 clamp(40px,6.2vw,76px)/1.02 var(--mono);letter-spacing:-.045em;margin:0;max-width:11ch}
+  h1{font:600 clamp(38px,5.6vw,68px)/1.04 var(--mono);letter-spacing:-.045em;margin:0;max-width:12ch}
   .lede{font:400 clamp(18px,2vw,22px)/1.5 var(--sans);color:var(--slate);max-width:34ch;margin:22px 0 0}
   .voice{font:italic 300 clamp(22px,2.6vw,30px)/1.35 var(--serif);max-width:24ch;margin:44px 0 0;padding-left:22px;border-left:1px solid var(--ink)}
   .hero-ctas{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center;margin-top:40px}
@@ -99,6 +100,13 @@
   .learn p{margin:0;color:var(--slate);font-size:15.5px}
   .learn a:hover h3{color:var(--salmon-deep)}
 
+  .parent{font:400 15px/1.5 var(--sans);color:var(--slate);margin:14px 0 0}
+  nav a.home{color:var(--ink);border:1px solid var(--ink);border-radius:999px;padding:8px 13px}
+  nav a.home:hover{background:var(--ink);color:var(--stock)}
+  .learn-line{padding:40px 0}
+  .learn-line p{margin:0;max-width:62ch;font:400 18px/1.6 var(--sans)}
+  .learn-line em{font:italic 400 19px var(--serif)}
+  .learn-line .go{white-space:nowrap;font-weight:500}
   footer{border-top:1px solid var(--ink);padding:26px 0 48px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
   footer .fb{display:flex;align-items:center;gap:12px}
   footer img{width:28px;height:28px}
@@ -122,12 +130,12 @@
 <div class="wrap">
 
   <nav aria-label="Main">
-    <a class="brand" href="./"><img src="logo.png" alt="">Biodesign Academy</a>
+    <a class="brand" href="https://www.biodesign.academy"><img src="logo.png" alt="">Biodesign Academy</a>
     <ul>
-      <li><a href="#tools">Tools</a></li>
-      <li><a href="#papers">Papers</a></li>
-      <li class="hide-s"><a href="#learn">Learn</a></li>
-      <li><a href="https://github.com/biodesign-academy">GitHub</a></li>
+      <li class="hide-s"><a href="#tools">Tools</a></li>
+      <li class="hide-s"><a href="#papers">Papers</a></li>
+      <li class="hide-s"><a href="https://github.com/biodesign-academy">GitHub</a></li>
+      <li><a class="home" href="https://www.biodesign.academy">Main site <span aria-hidden="true">↗</span></a></li>
     </ul>
   </nav>
 
@@ -163,13 +171,14 @@
       </svg>
     </div>
 
-    <p class="label"><span class="seed" aria-hidden="true"></span>Open tools and papers</p>
-    <h1>Biodesign Academy</h1>
-    <p class="lede">Insights and tools for learning and practising AI-native biodesign.</p>
+    <p class="label"><span class="seed" aria-hidden="true"></span>Biodesign Academy · Open</p>
+    <h1>Open tools and papers</h1>
+    <p class="lede">Free tools, open papers and data for designers working with proteins and living matter.</p>
+    <p class="parent">Part of <a href="https://www.biodesign.academy">Biodesign Academy</a>. Courses and Readings live at <a href="https://www.biodesign.academy">biodesign.academy</a>.</p>
     <p class="voice">We try to keep care and fairness inside the work, not added afterwards.</p>
     <div class="hero-ctas">
       <a class="btn" href="protein-backstory/">Open Protein Backstory <span class="arr" aria-hidden="true">→</span></a>
-      <a class="quiet" href="https://www.biodesign.academy">Courses and Readings</a>
+      <a class="quiet" href="#papers">Read the papers</a>
     </div>
   </header>
 
@@ -243,28 +252,13 @@
     </div>
   </section>
 
-  <section id="learn" aria-labelledby="l-h">
-    <div class="sec-head">
-      <h2 id="l-h">Learn with us</h2>
-      <p>The courses and weekly Readings live on our main site.</p>
-    </div>
-    <div class="learn">
-      <a href="https://www.biodesign.academy">
-        <span class="label">Course · six weeks, online</span>
-        <h3>AI-Native Biodesign: With Proteins</h3>
-        <p>Learn to read, fold and redesign proteins with free AI tools, and to judge what the results can and cannot show.</p>
-      </a>
-      <a href="https://www.biodesign.academy">
-        <span class="label">Weekly</span>
-        <h3>From the Molecule Up</h3>
-        <p>Readings on proteins, AI and design, for people who make with living matter.</p>
-      </a>
-    </div>
+  <section id="learn" class="learn-line" aria-label="Learn with us">
+    <p>Want to learn to use tools like these? The six-week course <em>AI-Native Biodesign: With Proteins</em> and the weekly Readings <em>From the Molecule Up</em> live on our main site. <a class="go" href="https://www.biodesign.academy">Go to biodesign.academy <span aria-hidden="true">→</span></a></p>
   </section>
 
   <footer>
     <span class="fb"><img src="logo.png" alt=""><span class="label">Biodesign Academy · Stockholm and London</span></span>
-    <span class="label"><a href="https://github.com/biodesign-academy">GitHub</a> · <a href="https://www.biodesign.academy">biodesign.academy</a></span>
+    <span class="label"><a href="https://github.com/biodesign-academy">GitHub</a> · <a href="https://www.biodesign.academy">Main site: biodesign.academy</a></span>
   </footer>
 </div>
 </body>
